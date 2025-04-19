@@ -45,7 +45,7 @@ That's it! Use the screen keyboard to activate "Cursor" or "Protek" or "AGF" con
 
 > If you don't like Cursor control, you can map Brick's D-pad and buttons as Sinclair Joystick (a.k.a. Sinclair Interface 2): 6/7 for Left/Right, 8/9 for Down/Up, 0 for Fire.
 
-> You can also map "Start" button to the key that starts the playing for any specific game!
+> You can also map "Start" button to the key that starts the playing for any specific game! You can also map `F1` and `F2` to whatever you want (their internal names in MinUI are `L3` and `R3`).
 
 > If you for any reason want to totally reset *all* console settings to their factory defaults, just remove the file `/.userdata/ZXS-fuse/minarch.cfg`.
 
