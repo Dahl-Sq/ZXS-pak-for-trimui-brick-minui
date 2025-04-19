@@ -4,7 +4,7 @@
 
 > ⚠️ This package was created and tested on MinUI-20250126-0 version and goes without any warranties.
 
-Turn the console off, extract its TF card (with working **MinUI** installation) and insert it into you computer's cardreader. Please keep in mind that upper or lower case characters matter! All your files and folders names must be exactly the same as shown in this manual.
+Turn the console off, extract its TF card (with working **MinUI** installation) and insert it into your computer's cardreader. Please keep in mind that upper or lower case characters matter! All your files and folders names must be exactly the same as shown in this manual.
 
 Unpack the archive and place folder `ZXS.pak` into `/Emus/tg5040` on the card. There must be three files: `default.cfg`, `fuse_libretro.so` and `launch.sh`.
 
