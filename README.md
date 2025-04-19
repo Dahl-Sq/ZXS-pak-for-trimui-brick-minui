@@ -1,56 +1,56 @@
-# ZXS.pak for TrimUI Brick console with MinUI firmware
+# ZXS.pak для консоли TrimUI Brick с прошивкой MinUI
 
-## Playing ZX Spectrum games on you Brick
+# Играем на Brick в игры ZX Spectrum
 
-> ⚠️ This package was created and tested on MinUI-20250126-0 version and goes without any warranties.
+> ⚠️ Этот пакет был создан и протестирован на версии MinUI-20250126-0 и предлагается без каких-либо гарантий. Вы экспериментируете со своей консолью исключительно на свой страх и риск.
 
-Turn the console off, extract its TF card (with working **MinUI** installation) and insert it into your computer's cardreader. Please keep in mind that upper or lower case characters matter! All your files and folders names must be exactly the same as shown in this manual.
+Выключите консоль, извлеките из неё TF-карту с установленной рабочей **MinUI** и вставьте её в картридер вашего компьютера. *Имейте в виду, что регистр символов в именах имеет значение!* Названия всех файлов и папок должны в точности совпадать с теми, что указаны в этом описании.
 
-Unpack the archive and place folder `ZXS.pak` into `/Emus/tg5040` on the card. There must be three files: `default.cfg`, `fuse_libretro.so` and `launch.sh`.
+Распакуйте архив и поместите папку `ZXS.pak` в `/Emus/tg5040` на карте памяти. Там должно быть три файла: `default.cfg`, `fuse_libretro.so` и `launch.sh`.
 
-Create folder `/Roms/ZX Spectrum (ZXS)`. You can use your own name instead of `ZX Spectrum`, but keep `(ZXS)` part in the end.
+Создайте папку `/Roms/ZX Spectrum (ZXS)`. Вы можете использовать своё собственное имя вместо "ZX Spectrum" (это просто отображаемое в меню имя платформы), но оставьте `(ZXS)` в конце.
 
-If you are using (undocumented) feature of **MinUI** to show covers and icons from `.res` hidden folders, then you can place the file `ZX Spectrum (ZXS).png` into `/Roms/.res`. (Rename it properly if you have chosen another name for ZX platform!) Oh, and if you can't understand this paragraph, then just ignore it.
+Если вы используете недокументированную функцию **MinUI** для отображения обложек и значков из скрытых папок `.res`, то можете поместить файл `ZX Spectrum (ZXS).png` в `/Roms/.res`. (Переименуйте его должным образом, если вы выбрали другое название для платформы.) А если вы не понимаете, о чём идёт речь в этом абзаце, то просто проигнорируйте его.
 
-Place some games into folder `/Roms/ZX Spectrum (ZXS)` and maybe their covers into `/Roms/ZX Spectrum (ZXS)/.res`. The emulator can work with `TAP`, `TZX`, `Z80` files and can pretend to be **ZX Spectrum 48K** or **ZX Spectrum 128K**. (Russian Spectrum models **Pentagon** and **Scorpion** are also available, but to use them you should place their ROM files on the card.)
+Поместите ваши игры в папку `/Roms/ZX Spectrum (ZXS)` и, возможно, их обложки в `/Roms/ZX Spectrum (ZXS)/.res`. Эмулятор может работать с файлами `TAP`, `TZX`, `Z80` и изображать из себя **ZX Spectrum 48K** или **ZX Spectrum 128K**. (Российские модели **Pentagon** и **Scorpion** также доступны, но для их эмуляции нужно поместить соответствующие файлы ПЗУ на карту памяти.)
 
-Now safely extract the card from computer, place it back into you console and turn the console on. You'll see "ZX Spectrum" section in the main menu. Enter it and start one of your games.
+Теперь извлеките карту памяти из компьютера, вставьте её обратно в консоль и включите консоль. В главном меню вы после загрузки увидите раздел "ZX Spectrum". Войдите в него и запустите одну из своих игр.
 
-First you should create some *common* settings for the whole **ZX Spectrum** platform. Press "Menu" button, go to "Options" and set everything in "Frontend" and "Emulator" submenus. My personal recommendations are:
+Сначала вам следует создать несколько общих настроек для *всей* платформы **ZX Spectrum**. Нажмите кнопку "Menu", перейдите в "Options" и установите всё нужное в подменю "Frontend" и "Emulator". Мои личные рекомендации таковы:
 
 - **Frontend**:
 	- `Screen Scaling = Fullscreen`
-	- `Screen Effect = none` (or set it to `Lines` if you like CRT picture)
+	- `Screen Effect = none` (или установите значение `Lines`, если вам нравится имитация кинескопного изображения на телевизоре)
 	- `Screen Sharpness = Crisp`
 - **Emulator**:
-	- `Model = Spectrum 128K` (some old games do require 48K model to work, but it's easy to set "per game")
+	- `Model = Spectrum 128K` (некоторым старым играм обязательно требуется модель 48K, но это легко настроить для конкретной игры)
 	- `Size Video Border = none`
-	
-Next, choose how console's controls should be mapped to Spectrum keyboard. My recommendation is to configure it as "Cursor Joystick" (the same as "Protek", the same as "AGF"). That is, configure `Joypad … mapping` options as follows:
 
-- D-pad:
-	- "Left" as 5
-	- "Right" as 8
-	- "Up" as 7
-	- "Down" as 6
-- Buttons:
-	- "A" (East) as 0 (fire)
-	- "B" (South) as 7 (useful for jumping)
+Затем выберите, как элементы управления консоли должны быть сопоставлены с клавиатурой Spectrum. Я рекомендую настроить всё как "Cursor Joystick" (он же "Protek", он же "AGF"). То есть, настройте параметры `Joypad … mapping` следующим образом:
 
-Remember, you can always change those settings individually for any specific game anytime you want. Also remember, buttons "L" and "R" are already mapped to "Enter" and "Space" by default, and you can always access the virtual screeen keyboard by pressing "Select" button (then navigate it with D-pad and "A").
+- Крестовина:
+	- "Left" как 5
+	- "Right" как 8
+	- "Up" как 7
+	- "Down" как 6
+- Кнопки:
+	- "A" (правая) как 0 (огонь)
+	- "B" (нижняя) как 7 (прыжок)
 
-Now go to the "Save Changes" submenu and select "Save for console".
+Помните, что вы всегда можете изменить эти настройки индивидуально для любой конкретной игры в любой момент. Также помните, что кнопки "L" и "R" по умолчанию уже сопоставлены с клавиатурными "Enter" и "Space", а ещё вы всегда можете получить доступ к виртуальной экранной клавиатуре, нажав кнопку "Select" (а затем работайте с ней посредством крестовины и "A").
 
-That's it! Use the screen keyboard to activate "Cursor" or "Protek" or "AGF" control in the running game, then use it to set additional game options (like difficulty level), then use it to start the game itself and play!
+Теперь перейдите в подменю "Save Changes" и выберите там "Save for console".
 
-> If you don't like Cursor control, you can map Brick's D-pad and buttons as Sinclair Joystick (a.k.a. Sinclair Interface 2): 6/7 for Left/Right, 8/9 for Down/Up, 0 for Fire.
+Это практически все! Используйте экранную клавиатуру, чтобы активировать управление "Cursor", "Protek" или "AGF" в запущенной игре, затем с неё же установите дополнительные параметры (например, уровень сложности), затем с неё же запустите саму игру и играйте!
 
-> You can also map "Start" button to the key that starts the playing for any specific game! You can also map `F1` and `F2` to whatever you want (their internal names in MinUI are `L3` and `R3`).
+Если вам не нравится управление Cursor/Protek/AGF, вы можете превратить крестовину и кнопки консоли в Sinclair Joystick (он же Sinclair Interface 2): 6/7 — влево/вправо, 8/9 — вниз/вверх, 0 — огонь.
 
-> If you for any reason want to totally reset *all* console settings to their factory defaults, just remove the file `/.userdata/ZXS-fuse/minarch.cfg`.
+Если вы по какой-то причине хотите полностью сбросить все настройки консоли до значений по умолчанию, то просто удалите файл `/.userdata/ZXS-fuse/minarch.cfg`.
 
-Some games can't be run on Spectrum 128K and require 48K model; some games can't be controlled by Cursor Joystick; some games require additional control keys and so on. In that case, open such game, press "Menu" button, go to "Options", set everything specific to the situation, then go to "Save Changes" but select "Save for game", not "Save for console". Then quit the game, start it again, and it will run with its personal settings.
+Некоторые старые игры не запускаются на Spectrum 128K и обязательно требуют модели 48K, некоторыми играми нельзя управлять с помощью Cursor Joystick, для некоторых игр требуются дополнительные клавиши управления и т.д. В этом случае откройте такую игру (ничего страшного, если её при запуске виртуальный ZX Spectrum сбросится, просто продолжайте), нажмите кнопку "Menu", перейдите в "Options", выполните все установки для данной конкретной ситуации, затем перейдите в "Save Changes", но там выберите "Save for game", а не "Save for console". Затем выйдите из игры, запустите её снова, и она запустится уже со своими личными настройками.
 
-> If you for any reason want to remove game-specific settings, just find the corresponding file in `/.userdata/ZXS-fuse` folder and remove it.
+Кстати, никто не мешает вам привязать кнопку "Start" к клавише, которая запускает сам игровой процесс в любой конкретной игре. А ещё можете привязывать `F1` и `F2` как вам нужно (их внутренние названия в **MinUI** — `L3` и `R3`).
 
-Have fun!
+Если вы по какой-то причине хотите удалить настройки, относящиеся к конкретной игре, просто найдите соответствующий файл в папке `/.userdata/ZXS-fuse` и удалите его.
+
+Развлекайтесь!
