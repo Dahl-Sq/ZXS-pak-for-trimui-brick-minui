@@ -47,10 +47,6 @@ That's it! Use the screen keyboard to activate "Cursor" or "Protek" or "AGF" con
 
 > You can also map "Start" button to the key that starts the playing for any specific game! You can also map `F1` and `F2` to whatever you want (their internal names in MinUI are `L3` and `R3`).
 
-> If you for any reason want to totally reset *all* console settings to their factory defaults, just remove the file `/.userdata/ZXS-fuse/minarch.cfg`.
-
 Some games can't be run on Spectrum 128K and require 48K model; some games can't be controlled by Cursor Joystick; some games require additional control keys and so on. In that case, open such game, press "Menu" button, go to "Options", set everything specific to the situation, then go to "Save Changes" but select "Save for game", not "Save for console". Then quit the game, start it again, and it will run with its personal settings.
-
-> If you for any reason want to remove game-specific settings, just find the corresponding file in `/.userdata/ZXS-fuse` folder and remove it.
 
 Have fun!
