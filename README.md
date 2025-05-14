@@ -1,4 +1,4 @@
-# ZXS.pak для консоли TrimUI Brick с прошивкой MinUI / NextUI
+# ZXS.pak для TrimUI Brick с прошивкой MinUI / NextUI
 
 # Играем на Brick в игры ZX Spectrum
 
